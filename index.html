@@ -134,20 +134,9 @@
     <footer>Hecho con cariño 🧡</footer>
   </main>
 
-  <script>
-    const copiarBtn = document.getElementById('copiar');
-    const mensaje = document.getElementById('mensaje').innerText.trim();
-    copiarBtn.addEventListener('click', async () => {
-      try{
-        await navigator.clipboard.writeText(mensaje);
-        copiarBtn.textContent = 'Copiado!';
-        setTimeout(()=> copiarBtn.textContent = 'Copiar mensaje',1200);
-      }catch(e){
-        alert('No se pudo copiar. Copia manualmente.');
-      }
-    });
-  </script>
+
 
 </body>
 </html>
+
 
